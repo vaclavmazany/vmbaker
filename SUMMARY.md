@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Introduction to VmBaker](README.md)
+* [Installation & Activation](installation.md)
 * [Global Settings](global_settings.md)
 * [History](history.md)
 
