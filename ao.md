@@ -17,7 +17,7 @@ Ambient Occlusion calculates soft geometric self-shadowing by determining how ex
 - **Spread:** Constrains the angle of the sample hemisphere. Lower values focus rays strictly toward the surface normal, while `1.0` fires across the full 180 degrees.
 - **Use Scene:** When enabled, VmBaker will evaluate all other (unselected) objects in the scene as potential occluders against your selected target.
 
-![Screenshot of AO tab]()
+![Screenshot of AO tab](https://placehold.co/800x400?text=Screenshot+of+AO+tab)
 
 ## Use Transfer
 

@@ -11,7 +11,7 @@ Unlike the Edge Bevel tab, the **Normals Transfer** mode is strictly dedicated t
 - **Suffix:** The filename suffix appended to the output file (default is `_normal`).
 - **Average normal filter:** Blends the baked normals with their neighbors to smooth out high-frequency details, pushing minor deviations back towards flat normal blue (RGB `128, 128, 255`).
 
-![Screenshot of Normals Transfer tab]()
+![Screenshot of Normals Transfer tab](https://placehold.co/800x400?text=Screenshot+of+Normals+Transfer+tab)
 
 ## Use Transfer (Always Enabled)
 

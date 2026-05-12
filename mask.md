@@ -13,4 +13,4 @@ The Mask mode is a utility used to generate black, white, or colored maps based 
 - **Color:** The target color picker used for the mask fill. This is only applicable when "Color" is selected as the Mask type.
 - **Swatches:** Quick access buttons to set the Mask Color to exact, pre-defined values (e.g., pure black, pure white, pure red).
 
-![Screenshot of Mask tab]()
+![Screenshot of Mask tab](https://placehold.co/800x400?text=Screenshot+of+Mask+tab)

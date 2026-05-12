@@ -13,4 +13,4 @@ Dilation expands the solid pixels of a texture outward into the transparent/empt
 - **Input file:** Click the `...` button to open a file browser and select the `.png` image file you want to apply dilation to.
 - **Dilation:** The pixel count used to expand the map edges. (e.g., `64px`).
 
-![Screenshot of Dilation tab]()
+![Screenshot of Dilation tab](https://placehold.co/800x400?text=Screenshot+of+Dilation+tab)

@@ -15,7 +15,7 @@ Configure where and how your baked textures are saved.
 - **Save to history:** When enabled, VmBaker saves each bake result to a numbered history folder based on the texture name, preventing accidental data loss.
 - **Append to texture:** Instead of overwriting the entire image, this overlays the newly baked UV islands on top of the existing texture.
 
-![Screenshot of File Output settings]()
+![Screenshot of File Output settings](https://placehold.co/800x400?text=Screenshot+of+File+Output+settings)
 
 ## Render Settings
 
@@ -25,7 +25,7 @@ Control the quality and size of your final baked maps.
 - **SSAA:** Supersampling factor. Renders the map at a higher internal resolution and downscales it to reduce aliasing (jagged edges). *Note: Higher values will increase render times.*
 - **UV Tolerance:** The distance threshold for UV seam detection. Increase this value if you see seams or artifacts appearing along the edges of your baked texture.
 
-![Screenshot of Render Settings]()
+![Screenshot of Render Settings](https://placehold.co/800x400?text=Screenshot+of+Render+Settings)
 
 ## PostProcess
 
@@ -34,4 +34,4 @@ Effects applied after the initial render is complete.
 - **Dilation:** Expands the texture edges into empty UV space. This is crucial for preventing dark background pixels from bleeding into your texture when the model is viewed from a distance (mip-mapping).
 - **Blur:** Applies a Gaussian blur to the final baked texture, softening the overall result.
 
-![Screenshot of PostProcess settings]()
+![Screenshot of PostProcess settings](https://placehold.co/800x400?text=Screenshot+of+PostProcess+settings)

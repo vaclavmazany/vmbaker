@@ -12,4 +12,4 @@ The History panel provides a quick way to view and revert to previous bakes with
 > [!WARNING]
 > The history list has a maximum capacity of 100 items. Reloading large files may take some time depending on your disk speed.
 
-![Screenshot of History list]()
+![Screenshot of History list](https://placehold.co/800x400?text=Screenshot+of+History+list)
