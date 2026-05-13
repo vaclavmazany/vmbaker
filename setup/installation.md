@@ -12,7 +12,7 @@ VmBaker is deployed via a unified Windows executable installer that automaticall
 2. The core Python and application files are installed centrally to `C:\Program Files\VmBaker`.
 3. The installer will automatically detect your host applications and create the necessary deployment links (`.mod` files for Maya, and Extension symlinks for Blender).
 
-<div><figure><img src="../.gitbook/assets/install_introduction.png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/install_path.png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/install_dcc.png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/install_confirmation.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../.gitbook/assets/install_introduction.png" alt="Installer Introduction window"><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/install_path.png" alt="Installer Path Selection window"><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/install_dcc.png" alt="Installer DCC Selection window"><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/install_confirmation.png" alt="Installer Confirmation window"><figcaption></figcaption></figure></div>
 
 ## Activating in Autodesk Maya
 
@@ -24,7 +24,7 @@ The installer automatically places a `.mod` file into your `%DOCUMENTS%\maya\mod
 2. Look at the top menu bar.
 3. Click the newly generated **VmBaker** menu item to open the user interface.
 
-<div><img src="../.gitbook/assets/maya_main_menu.png" alt="Screenshot of the Maya Top Menu"> <figure><img src="../.gitbook/assets/maya.png" alt=""><figcaption><p>VmBaker window</p></figcaption></figure></div>
+<div><img src="../.gitbook/assets/maya_main_menu.png" alt="Screenshot of the Maya Top Menu"> <figure><img src="../.gitbook/assets/maya.png" alt="VmBaker window in Maya"><figcaption><p>VmBaker window</p></figcaption></figure></div>
 
 ***
 
@@ -41,5 +41,5 @@ The installer creates a local extension symlink directly into your `%APPDATA%` B
 5. Check the box to enable the add-on.
 6. The VmBaker UI will now be available in your 3D Viewport sidebar (N-panel).
 
-<div><img src="../.gitbook/assets/blender_activation.png" alt="Screenshot of the Blender Preferences Add-ons Tab"> <figure><img src="../.gitbook/assets/blender_sidepanel.png" alt=""><figcaption><p>VmBaker sidebar panel</p></figcaption></figure></div>
+<div><img src="../.gitbook/assets/blender_activation.png" alt="Screenshot of the Blender Preferences Add-ons Tab"> <figure><img src="../.gitbook/assets/blender_sidepanel.png" alt="VmBaker sidebar panel in Blender"><figcaption><p>VmBaker sidebar panel</p></figcaption></figure></div>
 
