@@ -1,3 +1,7 @@
+---
+description: Configure edge dilation and Gaussian blur effects.
+---
+
 # PostProcess
 
 Effects applied after the initial render is complete.

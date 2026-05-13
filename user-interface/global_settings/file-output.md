@@ -1,3 +1,7 @@
+---
+description: Manage directory paths and naming conventions for baked textures.
+---
+
 # File Output
 
 Configure where and how your baked textures are saved.

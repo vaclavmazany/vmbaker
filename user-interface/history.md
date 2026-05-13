@@ -13,7 +13,7 @@ The History panel provides a quick way to view and revert to previous bakes with
 
 > \[!WARNING] The history list has a maximum capacity of 100 items. Reloading large files may take some time depending on your disk speed.
 
-<div><img src="../.gitbook/assets/history_normal.png" alt="Screenshot of Normal History list"> <figure><img src="../.gitbook/assets/history_ao.png" alt=""><figcaption><p>Screenshot of AO History list</p></figcaption></figure></div>
+<div><img src="../.gitbook/assets/history_normal.png" alt="Screenshot of Normal History list"> <figure><img src="../.gitbook/assets/history_ao.png" alt="Screenshot of AO History list"><figcaption><p>Screenshot of AO History list</p></figcaption></figure></div>
 
 
 

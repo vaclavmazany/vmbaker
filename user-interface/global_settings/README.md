@@ -10,5 +10,5 @@ These settings are applied globally, regardless of which baking mode you current
 There may be some settings that override some global settings in the respective bake modes.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/global_settings.png" alt=""><figcaption><p>Screenshot of Global settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/global_settings.png" alt="Screenshot of Global settings"><figcaption><p>Screenshot of Global settings</p></figcaption></figure>
 

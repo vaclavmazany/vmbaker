@@ -9,7 +9,7 @@ This baking mode generates a normal map that simulates smoothed, rounded edges o
 ## General Settings
 
 * **Suffix:** The filename suffix appended to the output file (default is `_normal`).
-* **Falloff:** Controls the type of the falloff used for easing the radius.
+* **Falloff:** Controls the type of falloff used to ease the radius.
   * Gaussian
   * Linear
 * **Radius:** The maximum distance from each surface point that samples are gathered within. This dictates how "wide" the bevel effect appears.
@@ -29,7 +29,7 @@ Toggle this section to enable projection baking, which transfers details from a 
 *   **Use Smooth Normals:** Calculates the initial ray direction using interpolated vertex normals instead of flat face normals.
 
     > \[!NOTE] The smooth normals approach requires supporting edges on the geometry. Disabling this may result in disconnections on hard, un-beveled edges.
-* **Use Vertex Color Mask:** When used, vertex color alpha channel on the source geometry controls the opacity of the bake.
+* **Use Vertex Color Mask:** When enabled, the vertex color alpha channel on the source geometry controls the opacity of the bake.
   * May be used to overlay details on top of existing bakes using transparency
 
 

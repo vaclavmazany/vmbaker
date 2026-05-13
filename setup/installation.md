@@ -1,5 +1,5 @@
 ---
-description: How to install and activate VmBaker in Maya and Blender.
+description: How to install and activate VmBaker.
 ---
 
 # Installation & Activation
