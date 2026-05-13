@@ -8,9 +8,15 @@ Unlike the other baking modes, the **Dilation** tab does not perform any 3D rend
 
 Dilation expands the solid pixels of a texture outward into the transparent/empty space, which prevents black backgrounds from bleeding into the image when viewed at lower mip-map levels.
 
+{% hint style="info" %}
+Keep in mind that you have to select the mesh in order to get the UV islands used for the dilation.
+{% endhint %}
+
 ## Settings
 
-- **Input file:** Click the `...` button to open a file browser and select the `.png` image file you want to apply dilation to.
-- **Dilation:** The pixel count used to expand the map edges. (e.g., `64px`).
+* **Input file:** Click the `...` button to open a file browser and select the `.png` image file you want to apply dilation to.
+* **Dilation:** The pixel count used to expand the map edges. (e.g., `64px`).
 
-![Screenshot of Dilation tab](https://placehold.co/800x400?text=Screenshot+of+Dilation+tab)
+
+
+![Screenshot of Dilation tab](../../.gitbook/assets/dilation_tab.png)
