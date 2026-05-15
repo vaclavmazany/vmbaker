@@ -25,6 +25,12 @@ This documentation serves as an overview of the user interface, explaining what 
   * Blender (4.2 and up)
   * stay tuned for more
 
+{% hint style="info" %}
+#### Licensing <a href="#user-content-licensing-1" id="user-content-licensing-1"></a>
+
+To keep the user experience as frictionless as possible, VmBaker contains absolutely no DRM, license keys, or online authorization checks. It relies entirely on the honor system. If this tool saves you time and improves your workflow, please consider purchasing it to support future updates.
+{% endhint %}
+
 ## Interface Breakdown
 
 The interface is divided into three main sections:
