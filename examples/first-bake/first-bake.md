@@ -1,5 +1,5 @@
 ---
-description: A step-by-step guide to rendering your first texture with VmBaker.
+description: Follow this step-by-step tutorial to bake a normal map in Maya using VmBaker.
 ---
 
 # Maya - Normal map
@@ -10,19 +10,19 @@ description: A step-by-step guide to rendering your first texture with VmBaker.
 
 <summary><strong>Initial scene setup -</strong> you may skip this if you are only interested in the baking process</summary>
 
-First let's open fresh empty scene. And import the **bullet.fbx** file using the File -> Import and locate the unziped **bullet.fbx**.
+First, let's open a fresh, empty scene. Import the **bullet.fbx** file using File -> Import and locate the unzipped **bullet.fbx**.
 
 After importing, you should see something similar to this.
 
-<figure><img src="../../.gitbook/assets/bullet_maya_import.png" alt="" width="188"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bullet_maya_import.png" alt="Imported bullet.fbx in Maya viewport" width="188"><figcaption></figcaption></figure>
 
 Now please save the scene in the same directory as the FBX file. So your directory should look similar to this.
 
-<figure><img src="../../.gitbook/assets/bullet_maya_savedScene.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bullet_maya_savedScene.png" alt="Maya scene saved next to the FBX file"><figcaption></figcaption></figure>
 
-This is for the convenience so that the VmBaker can automatically guess the output paths for rendering.
+This is for convenience so that VmBaker can automatically guess the output paths for rendering.
 
-Now for an optional step, but for better preview of the model. This will basically just load the HDRI and use it as a cubemap reflections in the viewport.
+This is an optional step to get a better preview of the model. It will load the HDRI and use it as cubemap reflections in the viewport.
 
 
 
@@ -31,9 +31,9 @@ Now for an optional step, but for better preview of the model. This will basical
 3. Enable all lights in the viewport settings.
 4. If you wish, disable the preview of the HDRI in the background by disabling **Show -> Viewport -> Lighting, Shading & Rendering -> Lights.** I will keep it disabled.
 
-<div><figure><img src="../../.gitbook/assets/add_dome_light.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/add_new_node.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/add_file_node.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/set_hdri_path.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/set_all_lights.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/add_dome_light.png" alt="Adding a Skydome Light"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/add_new_node.png" alt="Adding a new node to color slot"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/add_file_node.png" alt="Adding a file node"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/set_hdri_path.png" alt="Setting HDRI image path"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/set_all_lights.png" alt="Enabling all lights in viewport"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image.png" alt="HDRI environment preview"><figcaption></figcaption></figure></div>
 
-Now have a look at the outliner's content. Specifically the "modifiers", "transfer\_details", "transfer\_details\_variations" - all of these are there to show you the baking process.
+Now have a look at the outliner's content. Specifically, the "modifiers", "transfer_details", and "transfer_details_variations" groups. All of these are provided to demonstrate the baking process.
 
 For now you may hide these, if they distract you. We'll unhide them one by one once we will be baking them into the texture.
 
@@ -47,7 +47,7 @@ Open the VmBaker window from the main menu using **VmBaker -> Open VmBaker** and
 {% step %}
 ### Check Paths
 
-Please check that the paths are correctly setup before you start baking. At the bottom you will see the final path that will be used for the baked texture.
+Please check that the paths are correctly set up before you start baking. At the bottom you will see the final path that will be used for the baked texture.
 
 At this stage, we want to bake into the normal map so the path should point to the small PNG image that was included in the example scene.
 
@@ -61,7 +61,7 @@ VmBaker does not change or update materials, it works solely on the texture file
 {% step %}
 ### First Bake
 
-<div><figure><img src="../../.gitbook/assets/maya_first_bake.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_first_bake_radius_0_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/clean_edges.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/clean_edges1.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/maya_first_bake.png" alt="Maya first bake result"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_first_bake_radius_0_5.png" alt="Bake result with radius 0.5"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/clean_edges.png" alt="Clean beveled edges preview 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/clean_edges1.png" alt="Clean beveled edges preview 2"><figcaption></figcaption></figure></div>
 
 Now let's start finally baking!
 
@@ -83,11 +83,11 @@ If you use right mouse click on any of the UI settings, you will have option to 
 {% step %}
 ### Baking using helper meshes
 
-<div><figure><img src="../../.gitbook/assets/maya_modifiers_unhidden.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_modifiers_after_bake.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_modifiers_after_bake_solo.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/maya_modifiers_unhidden.png" alt="Modifiers group unhidden in viewport"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_modifiers_after_bake.png" alt="Bake result with modifiers"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_modifiers_after_bake_solo.png" alt="Bake result with modifiers isolated"><figcaption></figcaption></figure></div>
 
 The first bake was quite simple, let's continue with additional stuff.
 
-Unhide the **modifiers** group and have a look what is in there. It's just a bunch of simple cutters, intersections - just some meshes that are supposed to modify the resulting bake.
+Unhide the **modifiers** group and examine its contents. It contains simple cutters and intersections—meshes designed to modify the resulting bake.
 
 {% hint style="info" %}
 Notice that the models have no UVs - this is important.
@@ -112,7 +112,7 @@ I'm using **Isolate selection** to show only portions of the scene.
 
 Perhaps you don't like what you see, and want to get back the previous bake. You can, open the History tab. If you select any of the labels in the history, it will load that previous baked texture.
 
-<div><figure><img src="../../.gitbook/assets/maya_history_0.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_history_1.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/maya_history_0.png" alt="History tab item 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_history_1.png" alt="History tab item 2"><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
 Large files may take some time to reload. Please be patient if traversing the history of large textures.
@@ -126,7 +126,7 @@ The process is as follows - when selecting in the history tab it will replace th
 
 In this step we try how to append the bakes on top of each other.
 
-Unhide the **transfer\_details** group and inspect it's contents. There's just a simple hole-like mesh. This will be used to add this detail on top of existing bake.
+Unhide the **transfer\_details** group and inspect its contents. There's just a simple hole-like mesh. This will be used to add this detail on top of existing bake.
 
 This time select the group **transfer\_details FIRST** and the **shell** model **SECOND**. The order is important.
 
@@ -134,13 +134,13 @@ This time select the group **transfer\_details FIRST** and the **shell** model *
 **When using Transfer the order of selection matters.** All except the last selection is considered as SOURCE and the last selection is considered as the TARGET of the bake.
 {% endhint %}
 
-Setup the bake so that you still use the **Normals Edge Bevel** tab, but you enable the **Transfer** checkbox. Also please use settings similar to what you seen on the screenshots. Then hit Render - you should see similar results as on the screenshots.
+Set up the bake so that you still use the **Normals Edge Bevel** tab, but you enable the **Transfer** checkbox. Also please use settings similar to what you seen on the screenshots. Then hit Render - you should see similar results as on the screenshots.
 
-<div><figure><img src="../../.gitbook/assets/maya_overlay_0.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_overlay_1.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/maya_overlay_0.png" alt="Transfer details overlay bake 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_overlay_1.png" alt="Transfer details overlay bake 2"><figcaption></figcaption></figure></div>
 
-As always experiment, this time perhaps try to bake it multiple times, with different offset or scale. Or perhaps delete the inned face - so that it creates a "ring".
+As always experiment, this time perhaps try to bake it multiple times, with different offset or scale. Or perhaps delete the inner face - so that it creates a "ring".
 
-<div><figure><img src="../../.gitbook/assets/maya_overlay_2.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_overlay_3.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_overlay_4.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_overlay_5.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/maya_overlay_2.png" alt="Additional overlay detail 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_overlay_3.png" alt="Additional overlay detail 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_overlay_4.png" alt="Additional overlay detail 3"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_overlay_5.png" alt="Additional overlay detail 4"><figcaption></figcaption></figure></div>
 
 Notice how the detail keeps on adding. And again - if you wish, go back few steps in the history.
 {% endstep %}
@@ -152,11 +152,11 @@ Unhide the **transfer\_details\_variations** group and start experimenting with 
 
 No need to bake the whole **transfer\_details\_variations** group, this time - select any of the individual objects in that group and the **shell** model as last.
 
-<div><figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (1).png" alt="Additional details variation 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (2).png" alt="Additional details variation 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (3).png" alt="Additional details variation 3"><figcaption></figcaption></figure></div>
 
 Add the details as many times as you wish. Just try to get the hang of it.
 
-<div><figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/image (4).png" alt="Additional details variation 4"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (5).png" alt="Additional details variation 5"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (6).png" alt="Additional details variation 6"><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
 There are additional settings such as **Use smooth normals** or **Use vertex color mask** and ray distance settings which will be covered in other examples.
