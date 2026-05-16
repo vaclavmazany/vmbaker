@@ -8,4 +8,4 @@ Here you can preview the settings that are picked in the UI and start the render
 
 It shows the full path to the output texture and major render settings.
 
-<figure><img src="../.gitbook/assets/image.png" alt="Output settings preview and render"><figcaption><p>Output settings preview + Render</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt="Output settings preview and render"><figcaption><p>Output settings preview + Render</p></figcaption></figure>
