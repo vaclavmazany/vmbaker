@@ -24,4 +24,5 @@
 
 ## Examples
 
-* [First Bake](examples/first-bake.md)
+* [Introduction](examples/introduction.md)
+* [First Bake - Bullet](examples/first-bake.md)
