@@ -25,4 +25,6 @@
 ## Examples
 
 * [Introduction](examples/introduction.md)
-* [First Bake - Bullet](examples/first-bake.md)
+* [First Bake - Bullet](examples/first-bake/README.md)
+  * [Maya - Normal map](examples/first-bake/first-bake.md)
+  * [Blender - Normal map WIP](examples/first-bake/first-bake-1.md)
