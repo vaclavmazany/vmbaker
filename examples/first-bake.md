@@ -234,6 +234,14 @@ Change renderer to Cycles -> GPU Compute and switch to **Viewport shading**
 
 There are some groups like **modifiers,** transfer\_details and transfer\_details\_variations - you may hide these or use Local view so that they don't get in the way.
 
+Now please save the scene in the same directory as the FBX file. So your directory should look similar to this.
+
+<figure><img src="../.gitbook/assets/blender_scene_setup.png" alt=""><figcaption></figcaption></figure>
+
+
+
+If the addon is activated properly, you should see in the Blender NPanel - sidebar new panel called **VmBaker**, please open it.
+
 </details>
 
 #### Baking process
