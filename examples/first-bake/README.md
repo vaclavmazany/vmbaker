@@ -1,5 +1,26 @@
 ---
 description: Preparing the asset files for your very first bake.
+cover: ../../.gitbook/assets/bullet_example_cover.png
+coverY: 0
+layout:
+  width: default
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
 ---
 
 # First Bake - Bullet
@@ -23,4 +44,3 @@ For this example we will concentrate on the "bullet" folder. You will find these
 {% hint style="info" %}
 The FBX file is already set up with the links to the textures. If you are working on your custom model, you have to create materials and texture links manually.
 {% endhint %}
-

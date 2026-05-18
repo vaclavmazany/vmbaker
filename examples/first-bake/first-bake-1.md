@@ -1,44 +1,16 @@
 ---
-description: A step-by-step guide to rendering your first texture with VmBaker.
+description: Follow this step-by-step tutorial to bake a normal map in Maya using VmBaker.
+cover: ../../.gitbook/assets/bullet_example_cover.png
+coverY: 0
 ---
 
-# Blender - Normal map WIP
-
-#### Initial scene setup
-
-<details>
-
-<summary><strong>Initial scene setup -</strong> you may skip this if you are only interested in the baking process</summary>
-
-Create a new scene, remove the default cube.
-
-Import the example file using **File -> Import -> FBX** and load the **bullet.fbx** file
-
-<figure><img src="../../.gitbook/assets/blender_after_import.png" alt="" width="188"><figcaption><p>After import in Blender</p></figcaption></figure>
-
-Change renderer to Cycles -> GPU Compute and switch to **Viewport shading**
-
-<figure><img src="../../.gitbook/assets/image (7).png" alt="" width="188"><figcaption><p>Viewport shading on</p></figcaption></figure>
-
-There are some groups like **modifiers,** transfer\_details and transfer\_details\_variations - you may hide these or use Local view so that they don't get in the way.
-
-Now please save the scene in the same directory as the FBX file. So your directory should look similar to this.
-
-<figure><img src="../../.gitbook/assets/blender_scene_setup.png" alt=""><figcaption></figcaption></figure>
-
-
-
-If the addon is activated properly, you should see in the Blender NPanel - sidebar new panel called **VmBaker**, please open it.
-
-</details>
-
-#### Baking process
+# Baking - Normal map
 
 {% stepper %}
 {% step %}
-### Check Paths
+#### Check Paths
 
-Please check that the paths are correctly setup before you start baking. At the bottom you will see the final path that will be used for the baked texture.
+Please check that the paths are correctly set up before you start baking. At the bottom of VmBaker you will see the final path that will be used for the baked texture.
 
 At this stage, we want to bake into the normal map so the path should point to the small PNG image that was included in the example scene.
 
@@ -50,9 +22,7 @@ VmBaker does not change or update materials, it works solely on the texture file
 {% endstep %}
 
 {% step %}
-### First Bake
-
-<div><figure><img src="../../.gitbook/assets/maya_first_bake.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_first_bake_radius_0_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/clean_edges.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/clean_edges1.png" alt=""><figcaption></figcaption></figure></div>
+#### First Bake
 
 Now let's start finally baking!
 
@@ -61,6 +31,18 @@ Let's setup the resolution to use **512x512**, make sure you are in the **Normal
 Select the **shell** model and hit **RENDER**
 
 You should see immediately something similar to the first screenshot.
+
+{% tabs %}
+{% tab title="Maya" %}
+<div><figure><img src="../../.gitbook/assets/maya_first_bake.png" alt="Maya first bake result"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_first_bake_radius_0_5.png" alt="Bake result with radius 0.5"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/clean_edges.png" alt="Clean beveled edges preview 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/clean_edges1.png" alt="Clean beveled edges preview 2"><figcaption></figcaption></figure></div>
+
+
+{% endtab %}
+
+{% tab title="Blender" %}
+<div><figure><img src="../../.gitbook/assets/blender_first_bake.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_first_bake_radius_0_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_clean_edges.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_clead_edges1.png" alt=""><figcaption></figcaption></figure></div>
+{% endtab %}
+{% endtabs %}
 
 If you don't like it - experiment with the settings. Try to increase the Radius or Samples.
 
@@ -72,13 +54,11 @@ If you use right mouse click on any of the UI settings, you will have option to 
 {% endstep %}
 
 {% step %}
-### Baking using helper meshes
-
-<div><figure><img src="../../.gitbook/assets/maya_modifiers_unhidden.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_modifiers_after_bake.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_modifiers_after_bake_solo.png" alt=""><figcaption></figcaption></figure></div>
+#### Baking using helper meshes
 
 The first bake was quite simple, let's continue with additional stuff.
 
-Unhide the **modifiers** group and have a look what is in there. It's just a bunch of simple cutters, intersections - just some meshes that are supposed to modify the resulting bake.
+Unhide the **modifiers** group and examine its contents. It contains simple cutters and intersections—meshes designed to modify the resulting bake.
 
 {% hint style="info" %}
 Notice that the models have no UVs - this is important.
@@ -91,21 +71,41 @@ The color of those models is only for convenience.
 
 Now if you select the group called **modifiers** together with the **shell** model and just simply hit **RENDER**.
 
-Based on the settings you have entered you should see something similar to the 2nd and 3rd screenshot.&#x20;
+{% tabs %}
+{% tab title="Maya" %}
+<div><figure><img src="../../.gitbook/assets/maya_modifiers_unhidden.png" alt="Modifiers group unhidden in viewport"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_modifiers_after_bake.png" alt="Bake result with modifiers"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_modifiers_after_bake_solo.png" alt="Bake result with modifiers isolated"><figcaption></figcaption></figure></div>
+
+
+{% endtab %}
+
+{% tab title="Blender" %}
+<div><figure><img src="../../.gitbook/assets/blender_modifiers_unhidden.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_modifiers_after_bake.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_modifiers_after_bake_solo.png" alt=""><figcaption></figcaption></figure></div>
+{% endtab %}
+{% endtabs %}
+
+Based on the settings you have entered you should see something similar to the 2nd and 3rd screenshot.
 
 {% hint style="info" %}
 I'm using **Isolate selection** to show only portions of the scene.
 {% endhint %}
-
-
 {% endstep %}
 
 {% step %}
-### History traversal
+#### History traversal
 
 Perhaps you don't like what you see, and want to get back the previous bake. You can, open the History tab. If you select any of the labels in the history, it will load that previous baked texture.
 
-<div><figure><img src="../../.gitbook/assets/maya_history_0.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_history_1.png" alt=""><figcaption></figcaption></figure></div>
+{% tabs %}
+{% tab title="Maya" %}
+<div><figure><img src="../../.gitbook/assets/maya_history_0.png" alt="History tab item 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_history_1.png" alt="History tab item 2"><figcaption></figcaption></figure></div>
+
+
+{% endtab %}
+
+{% tab title="Blender" %}
+<div><figure><img src="../../.gitbook/assets/blender_history_0.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_history_1.png" alt=""><figcaption></figcaption></figure></div>
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 Large files may take some time to reload. Please be patient if traversing the history of large textures.
@@ -115,11 +115,11 @@ The process is as follows - when selecting in the history tab it will replace th
 {% endstep %}
 
 {% step %}
-### Baking additional details / overlaying bakes using Transfer
+#### Baking additional details / overlaying bakes using Transfer
 
 In this step we try how to append the bakes on top of each other.
 
-Unhide the **transfer\_details** group and inspect it's contents. There's just a simple hole-like mesh. This will be used to add this detail on top of existing bake.
+Unhide the **transfer\_details** group and inspect its contents. There's just a simple hole-like mesh. This will be used to add this detail on top of existing bake.
 
 This time select the group **transfer\_details FIRST** and the **shell** model **SECOND**. The order is important.
 
@@ -127,29 +127,69 @@ This time select the group **transfer\_details FIRST** and the **shell** model *
 **When using Transfer the order of selection matters.** All except the last selection is considered as SOURCE and the last selection is considered as the TARGET of the bake.
 {% endhint %}
 
-Setup the bake so that you still use the **Normals Edge Bevel** tab, but you enable the **Transfer** checkbox. Also please use settings similar to what you seen on the screenshots. Then hit Render - you should see similar results as on the screenshots.
+Set up the bake so that you still use the **Normals Edge Bevel** tab, but you enable the **Transfer** checkbox. Also please use settings similar to what you seen on the screenshots. Then hit Render - you should see similar results as on the screenshots.
 
-<div><figure><img src="../../.gitbook/assets/maya_overlay_0.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_overlay_1.png" alt=""><figcaption></figcaption></figure></div>
+{% tabs %}
+{% tab title="Maya" %}
+<div><figure><img src="../../.gitbook/assets/maya_overlay_0.png" alt="Transfer details overlay bake 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_overlay_1.png" alt="Transfer details overlay bake 2"><figcaption></figcaption></figure></div>
 
-As always experiment, this time perhaps try to bake it multiple times, with different offset or scale. Or perhaps delete the inned face - so that it creates a "ring".
 
-<div><figure><img src="../../.gitbook/assets/maya_overlay_2.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_overlay_3.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_overlay_4.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_overlay_5.png" alt=""><figcaption></figcaption></figure></div>
+{% endtab %}
+
+{% tab title="Blender" %}
+
+{% endtab %}
+{% endtabs %}
+
+As always experiment, this time perhaps try to bake it multiple times, with different offset or scale. Or perhaps delete the inner face - so that it creates a "ring".
+
+{% tabs %}
+{% tab title="Maya" %}
+<div><figure><img src="../../.gitbook/assets/maya_overlay_2.png" alt="Additional overlay detail 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_overlay_3.png" alt="Additional overlay detail 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_overlay_4.png" alt="Additional overlay detail 3"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_overlay_5.png" alt="Additional overlay detail 4"><figcaption></figcaption></figure></div>
+
+
+{% endtab %}
+
+{% tab title="Blender" %}
+
+{% endtab %}
+{% endtabs %}
 
 Notice how the detail keeps on adding. And again - if you wish, go back few steps in the history.
 {% endstep %}
 
 {% step %}
-### Baking additional details
+#### Baking additional details
 
 Unhide the **transfer\_details\_variations** group and start experimenting with baking these. You will see, that there's a ring around the main cylinder - this is if you are not satisfied with how the **modifiers** group baked into the texture, you may replace it with custom made model or add additional details to the model.
 
 No need to bake the whole **transfer\_details\_variations** group, this time - select any of the individual objects in that group and the **shell** model as last.
 
-<div><figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure></div>
+{% tabs %}
+{% tab title="Maya" %}
+<div><figure><img src="../../.gitbook/assets/image (1).png" alt="Additional details variation 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (2).png" alt="Additional details variation 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (3).png" alt="Additional details variation 3"><figcaption></figcaption></figure></div>
+
+
+{% endtab %}
+
+{% tab title="Blender" %}
+
+{% endtab %}
+{% endtabs %}
 
 Add the details as many times as you wish. Just try to get the hang of it.
 
-<div><figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure></div>
+{% tabs %}
+{% tab title="Maya" %}
+<div><figure><img src="../../.gitbook/assets/image (4).png" alt="Additional details variation 4"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (5).png" alt="Additional details variation 5"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (6).png" alt="Additional details variation 6"><figcaption></figcaption></figure></div>
+
+
+{% endtab %}
+
+{% tab title="Blender" %}
+
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 There are additional settings such as **Use smooth normals** or **Use vertex color mask** and ray distance settings which will be covered in other examples.
@@ -157,7 +197,7 @@ There are additional settings such as **Use smooth normals** or **Use vertex col
 {% endstep %}
 
 {% step %}
-### Conclusion
+#### Conclusion
 
 So this is the basic working of the VmBaker.
 
@@ -169,3 +209,4 @@ The **Append to texture** option in the Global settings allows you to work on mu
 {% endstep %}
 {% endstepper %}
 
+<figure><img src="../../.gitbook/assets/bullet_example.png" alt=""><figcaption><p>Bullet Normal Map bake example</p></figcaption></figure>
