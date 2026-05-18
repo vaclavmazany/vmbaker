@@ -64,11 +64,9 @@ Keep in mind that when using **Transfer** the order of selection matters. Always
 
 <div><figure><img src="../.gitbook/assets/blender_revolver_transfer_hard_0.png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/blender_revolver_transfer_hard_1.png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/blender_revolver_transfer_hard_2.png" alt=""><figcaption></figcaption></figure></div>
 
-Now include the group **transfer\_smooth\_normals** - again follow the settings in the screenshots. This time change the **Radius** to 0,3 and **In ray distance** to 2 and **Out ray dis**
+Now include the group **transfer\_smooth\_normals** - again follow the settings in the screenshots. This time change the **Radius** to 0,3 and **In ray distance** to 2 and **Out ray distance** to 0.
 
-**tance** to 0.
-
-<div><figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../.gitbook/assets/blender_revolver_transfer_smooth_0.png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/blender_revolver_transfer_smooth_1.png" alt=""><figcaption></figcaption></figure></div>
 
 Perhaps experiment with the radius settings.
 
@@ -76,7 +74,7 @@ Perhaps experiment with the radius settings.
 As this type of baking is overlaying the bakes on top of each other, use **History** to get back if you do not like the current bake.
 {% endhint %}
 
-<div><figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../.gitbook/assets/blender_revolver_boolean_0.png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/blender_revolver_boolean_1.png" alt=""><figcaption></figcaption></figure></div>
 
 Inspect the objects, that are inside that group - move them and try to bake them individually so that you also get the intuition for the In / Out ray distances.
 
