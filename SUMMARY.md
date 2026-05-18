@@ -28,3 +28,4 @@
 * [First Bake - Bullet](examples/first-bake/README.md)
   * [Initial scene setup](examples/first-bake/first-bake.md)
   * [Baking - Normal map](examples/first-bake/first-bake-1.md)
+* [Lowpoly revolver cylinder](examples/lowpoly-revolver-cylinder.md)
