@@ -1,5 +1,5 @@
 ---
-description: Follow this step-by-step tutorial to bake a normal map in Maya using VmBaker.
+description: Continue the step-by-step tutorial to render and refine your normal map.
 cover: ../../.gitbook/assets/bullet_example_cover.png
 coverY: 0
 ---
@@ -10,7 +10,7 @@ coverY: 0
 {% step %}
 #### Check Paths
 
-Please check that the paths are correctly set up before you start baking. At the bottom of VmBaker you will see the final path that will be used for the baked texture.
+Please check that the paths are correctly set up before you start baking. At the bottom of the VmBaker UI, you will see the final path that will be used for the baked texture.
 
 At this stage, we want to bake into the normal map so the path should point to the small PNG image that was included in the example scene.
 
@@ -26,7 +26,7 @@ VmBaker does not change or update materials, it works solely on the texture file
 
 Now let's start finally baking!
 
-Let's setup the resolution to use **512x512**, make sure you are in the **Normals Edge Bevel** tab and set the **Radius** to about 0,2cm (adjust to your liking).
+Let's set up the resolution to use **512x512**, make sure you are in the **Normals Edge Bevel** tab and set the **Radius** to about 0,2cm (adjust to your liking).
 
 Select the **shell** model and hit **RENDER**
 
@@ -40,7 +40,7 @@ You should see immediately something similar to the first screenshot.
 {% endtab %}
 
 {% tab title="Blender" %}
-<div><figure><img src="../../.gitbook/assets/blender_first_bake.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_first_bake_radius_0_5.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_clean_edges.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_clead_edges1.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/blender_first_bake.png" alt="Blender first bake result"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_first_bake_radius_0_5.png" alt="Blender bake result with radius 0.5"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_clean_edges.png" alt="Blender clean beveled edges preview 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_clead_edges1.png" alt="Blender clean beveled edges preview 2"><figcaption></figcaption></figure></div>
 {% endtab %}
 {% endtabs %}
 
@@ -79,7 +79,7 @@ Now if you select the group called **modifiers** together with the **shell** mod
 {% endtab %}
 
 {% tab title="Blender" %}
-<div><figure><img src="../../.gitbook/assets/blender_modifiers_unhidden.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_modifiers_after_bake.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_modifiers_after_bake_solo.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/blender_modifiers_unhidden.png" alt="Blender modifiers group unhidden"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_modifiers_after_bake.png" alt="Blender bake result with modifiers"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_modifiers_after_bake_solo.png" alt="Blender bake result with modifiers isolated"><figcaption></figcaption></figure></div>
 {% endtab %}
 {% endtabs %}
 
@@ -103,7 +103,7 @@ Perhaps you don't like what you see, and want to get back the previous bake. You
 {% endtab %}
 
 {% tab title="Blender" %}
-<div><figure><img src="../../.gitbook/assets/blender_history_0.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_history_1.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/blender_history_0.png" alt="Blender history tab item 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_history_1.png" alt="Blender history tab item 2"><figcaption></figcaption></figure></div>
 {% endtab %}
 {% endtabs %}
 
@@ -119,7 +119,7 @@ The process is as follows - when selecting in the history tab it will replace th
 
 In this step we try how to append the bakes on top of each other.
 
-Unhide the **transfer\_details** group and inspect its contents. There's just a simple hole-like mesh. This will be used to add this detail on top of existing bake.
+Unhide the **transfer\_details** group and inspect its contents. It contains a simple hole-like mesh. This will be used to add this detail on top of existing bake.
 
 This time select the group **transfer\_details FIRST** and the **shell** model **SECOND**. The order is important.
 
@@ -127,7 +127,7 @@ This time select the group **transfer\_details FIRST** and the **shell** model *
 **When using Transfer the order of selection matters.** All except the last selection is considered as SOURCE and the last selection is considered as the TARGET of the bake.
 {% endhint %}
 
-Set up the bake so that you still use the **Normals Edge Bevel** tab, but you enable the **Transfer** checkbox. Also please use settings similar to what you seen on the screenshots. Then hit Render - you should see similar results as on the screenshots.
+Set up the bake so that you still use the **Normals Edge Bevel** tab, but you enable the **Transfer** checkbox. Also, please use settings similar to what you see in the screenshots. Then hit Render - you should see similar results as on the screenshots.
 
 {% tabs %}
 {% tab title="Maya" %}
@@ -137,7 +137,7 @@ Set up the bake so that you still use the **Normals Edge Bevel** tab, but you en
 {% endtab %}
 
 {% tab title="Blender" %}
-<div><figure><img src="../../.gitbook/assets/blender_overlay_0.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_overlay_1.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/blender_overlay_0.png" alt="Blender transfer details overlay bake 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_overlay_1.png" alt="Blender transfer details overlay bake 2"><figcaption></figcaption></figure></div>
 {% endtab %}
 {% endtabs %}
 
@@ -151,7 +151,7 @@ As always experiment, this time perhaps try to bake it multiple times, with diff
 {% endtab %}
 
 {% tab title="Blender" %}
-<div><figure><img src="../../.gitbook/assets/blender_overlay_2.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_overlay_3.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_overlay_4.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_overlay_5.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/blender_overlay_2.png" alt="Blender additional overlay detail 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_overlay_3.png" alt="Blender additional overlay detail 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_overlay_4.png" alt="Blender additional overlay detail 3"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_overlay_5.png" alt="Blender additional overlay detail 4"><figcaption></figcaption></figure></div>
 {% endtab %}
 {% endtabs %}
 
@@ -173,7 +173,7 @@ No need to bake the whole **transfer\_details\_variations** group, this time - s
 {% endtab %}
 
 {% tab title="Blender" %}
-<div><figure><img src="../../.gitbook/assets/blender_additional_details_0.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_additional_details_1.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_additional_details_2.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/blender_additional_details_0.png" alt="Blender additional details variation 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_additional_details_1.png" alt="Blender additional details variation 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_additional_details_2.png" alt="Blender additional details variation 3"><figcaption></figcaption></figure></div>
 {% endtab %}
 {% endtabs %}
 
@@ -187,7 +187,7 @@ Add the details as many times as you wish. Just try to get the hang of it.
 {% endtab %}
 
 {% tab title="Blender" %}
-<div><figure><img src="../../.gitbook/assets/blender_additional_details_3.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_additional_details_4.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_additional_details_5.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/blender_additional_details_3.png" alt="Blender additional details variation 4"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_additional_details_4.png" alt="Blender additional details variation 5"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_additional_details_5.png" alt="Blender additional details variation 6"><figcaption></figcaption></figure></div>
 {% endtab %}
 {% endtabs %}
 
@@ -209,4 +209,4 @@ The **Append to texture** option in the Global settings allows you to work on mu
 {% endstep %}
 {% endstepper %}
 
-<figure><img src="../../.gitbook/assets/bullet_example.png" alt=""><figcaption><p>Bullet Normal Map bake example</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bullet_example.png" alt="Bullet Normal Map bake example"><figcaption><p>Bullet Normal Map bake example</p></figcaption></figure>

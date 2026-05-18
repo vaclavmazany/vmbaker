@@ -39,24 +39,24 @@ Open the VmBaker window from the main menu using **VmBaker -> Open VmBaker** and
 {% endtab %}
 
 {% tab title="Blender" %}
-Create a new scene, remove the default cube.
+Create a new scene and remove the default cube.
 
-Import the example file using **File -> Import -> FBX** and load the **bullet.fbx** file
+Import the example file using **File -> Import -> FBX** and load the **bullet.fbx** file.
 
-<figure><img src="../../.gitbook/assets/blender_after_import.png" alt="" width="188"><figcaption><p>After import in Blender</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/blender_after_import.png" alt="Imported bullet.fbx in Blender viewport" width="188"><figcaption><p>After import in Blender</p></figcaption></figure>
 
-Change renderer to Cycles -> GPU Compute and switch to **Viewport shading**
+Change the renderer to Cycles -> GPU Compute and switch to **Viewport shading**.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt="" width="188"><figcaption><p>Viewport shading on</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt="Viewport shading enabled in Blender" width="188"><figcaption><p>Viewport shading on</p></figcaption></figure>
 
-There are some groups like **modifiers,** transfer\_details and transfer\_details\_variations - you may hide these or use Local view so that they don't get in the way.
+There are some groups like **modifiers**, **transfer_details**, and **transfer_details_variations**—you may hide these or use Local View so they don't get in the way.
 
-Now please save the scene in the same directory as the FBX file. So your directory should look similar to this.
+Now, please save the scene in the same directory as the FBX file so your directory looks similar to this.
 
-<figure><img src="../../.gitbook/assets/blender_scene_setup.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/blender_scene_setup.png" alt="Blender scene saved next to the FBX file"><figcaption></figcaption></figure>
 
 
 
-If the addon is activated properly, you should see in the Blender NPanel - sidebar new panel called **VmBaker**, please open it.
+If the add-on is activated properly, you should see a new panel called **VmBaker** in the Blender N-Panel (sidebar). Please open it.
 {% endtab %}
 {% endtabs %}
