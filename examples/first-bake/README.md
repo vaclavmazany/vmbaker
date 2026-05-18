@@ -1,7 +1,7 @@
 ---
 description: Preparing the asset files for your very first bake.
 cover: ../../.gitbook/assets/bullet_example_cover.png
-coverY: 0
+coverY: -43.43086172344689
 layout:
   width: default
   cover:
