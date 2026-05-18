@@ -137,7 +137,7 @@ Set up the bake so that you still use the **Normals Edge Bevel** tab, but you en
 {% endtab %}
 
 {% tab title="Blender" %}
-
+<div><figure><img src="../../.gitbook/assets/blender_overlay_0.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_overlay_1.png" alt=""><figcaption></figcaption></figure></div>
 {% endtab %}
 {% endtabs %}
 
@@ -151,7 +151,7 @@ As always experiment, this time perhaps try to bake it multiple times, with diff
 {% endtab %}
 
 {% tab title="Blender" %}
-
+<div><figure><img src="../../.gitbook/assets/blender_overlay_2.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_overlay_3.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_overlay_4.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_overlay_5.png" alt=""><figcaption></figcaption></figure></div>
 {% endtab %}
 {% endtabs %}
 
@@ -167,13 +167,13 @@ No need to bake the whole **transfer\_details\_variations** group, this time - s
 
 {% tabs %}
 {% tab title="Maya" %}
-<div><figure><img src="../../.gitbook/assets/image (1).png" alt="Additional details variation 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (2).png" alt="Additional details variation 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (3).png" alt="Additional details variation 3"><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/maya_additional_details_0.png" alt="Additional details variation 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_additional_details_1.png" alt="Additional details variation 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_additional_details_2.png" alt="Additional details variation 3"><figcaption></figcaption></figure></div>
 
 
 {% endtab %}
 
 {% tab title="Blender" %}
-
+<div><figure><img src="../../.gitbook/assets/blender_additional_details_0.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_additional_details_1.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_additional_details_2.png" alt=""><figcaption></figcaption></figure></div>
 {% endtab %}
 {% endtabs %}
 
@@ -181,13 +181,13 @@ Add the details as many times as you wish. Just try to get the hang of it.
 
 {% tabs %}
 {% tab title="Maya" %}
-<div><figure><img src="../../.gitbook/assets/image (4).png" alt="Additional details variation 4"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (5).png" alt="Additional details variation 5"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (6).png" alt="Additional details variation 6"><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/maya_additional_details_3.png" alt="Additional details variation 4"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_additional_details_4.png" alt="Additional details variation 5"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_additional_details_5.png" alt="Additional details variation 6"><figcaption></figcaption></figure></div>
 
 
 {% endtab %}
 
 {% tab title="Blender" %}
-
+<div><figure><img src="../../.gitbook/assets/blender_additional_details_3.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_additional_details_4.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_additional_details_5.png" alt=""><figcaption></figcaption></figure></div>
 {% endtab %}
 {% endtabs %}
 
