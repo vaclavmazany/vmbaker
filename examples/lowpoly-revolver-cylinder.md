@@ -1,5 +1,7 @@
 ---
-description: Learn how to use edge bevel and transfer tools to bake fake booleans onto a low-poly cylinder.
+description: >-
+  Learn how to use edge bevel and transfer tools to bake fake booleans onto a
+  low-poly revolver cylinder.
 cover: ../.gitbook/assets/revolver_cylinder.png
 coverY: 13.992985971943888
 ---
@@ -24,7 +26,7 @@ In this example, I will use Blender for the showcase, but the logic remains the 
 
 {% stepper %}
 {% step %}
-### FBX Scene contents
+#### FBX Scene contents
 
 As in the [first-bake](first-bake/ "mention") example, you will find groups called **modifiers**, **transfer\_hard\_normals**, **transfer\_smooth\_normals**.
 
@@ -34,7 +36,7 @@ I like to keep these objects semi-transparent so that I can see the bake beneath
 {% endstep %}
 
 {% step %}
-### Baking the base
+#### Baking the base
 
 Start off by selecting the **revolver\_cylinder** mesh and baking it using the settings in the screenshot - or try anything you like the most.
 
@@ -42,7 +44,7 @@ A radius of 0.1cm works well for this example.
 
 <div><figure><img src="../.gitbook/assets/blender_revolver_base_0.png" alt="Revolver base bake settings"><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/blender_revolver_base_1.png" alt="Revolver base bake result"><figcaption></figcaption></figure></div>
 
-Now try to include the **modifiers** group, and have a look what it does.&#x20;
+Now try to include the **modifiers** group, and have a look what it does.
 
 <div><figure><img src="../.gitbook/assets/blender_revolver_base_2.png" alt="Modifiers included in bake"><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/blender_revolver_base_3.png" alt="Resulting bake with modifiers"><figcaption></figcaption></figure></div>
 
@@ -52,7 +54,7 @@ You may select just the root of the selection that you want to be used for bakin
 {% endstep %}
 
 {% step %}
-### Adding additional details
+#### Adding additional details
 
 Start off by baking the group **transfer\_hard\_normals**.
 
@@ -82,12 +84,10 @@ Or try using completely different objects.
 {% endstep %}
 
 {% step %}
-### Conclusion
+#### Conclusion
 
 But in the end, you should have something similar to this.
 
 <figure><img src="../.gitbook/assets/revolver_cylinder.png" alt="Final lowpoly revolver cylinder render"><figcaption></figcaption></figure>
-
-
 {% endstep %}
 {% endstepper %}
