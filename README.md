@@ -1,5 +1,26 @@
 ---
 description: An overview of the VmBaker plugin interface and workflow.
+cover: .gitbook/assets/Gitbook header.png
+coverY: 0
+layout:
+  width: default
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
 ---
 
 # Introduction to VmBaker

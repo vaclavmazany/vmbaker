@@ -8,7 +8,7 @@ coverY: 0
 
 {% stepper %}
 {% step %}
-#### Check Paths
+**Check Paths**
 
 Please check that the paths are correctly set up before you start baking. At the bottom of the VmBaker UI, you will see the final path that will be used for the baked texture.
 
@@ -22,7 +22,7 @@ VmBaker does not change or update materials, it works solely on the texture file
 {% endstep %}
 
 {% step %}
-#### First Bake
+**First Bake**
 
 Now let's start finally baking!
 
@@ -35,8 +35,6 @@ You should see immediately something similar to the first screenshot.
 {% tabs %}
 {% tab title="Maya" %}
 <div><figure><img src="../../.gitbook/assets/maya_first_bake.png" alt="Maya first bake result"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_first_bake_radius_0_5.png" alt="Bake result with radius 0.5"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/clean_edges.png" alt="Clean beveled edges preview 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/clean_edges1.png" alt="Clean beveled edges preview 2"><figcaption></figcaption></figure></div>
-
-
 {% endtab %}
 
 {% tab title="Blender" %}
@@ -54,7 +52,7 @@ If you use right mouse click on any of the UI settings, you will have option to 
 {% endstep %}
 
 {% step %}
-#### Baking using helper meshes
+**Baking using helper meshes**
 
 The first bake was quite simple, let's continue with additional stuff.
 
@@ -74,8 +72,6 @@ Now if you select the group called **modifiers** together with the **shell** mod
 {% tabs %}
 {% tab title="Maya" %}
 <div><figure><img src="../../.gitbook/assets/maya_modifiers_unhidden.png" alt="Modifiers group unhidden in viewport"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_modifiers_after_bake.png" alt="Bake result with modifiers"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_modifiers_after_bake_solo.png" alt="Bake result with modifiers isolated"><figcaption></figcaption></figure></div>
-
-
 {% endtab %}
 
 {% tab title="Blender" %}
@@ -91,15 +87,13 @@ I'm using **Isolate selection** to show only portions of the scene.
 {% endstep %}
 
 {% step %}
-#### History traversal
+**History traversal**
 
 Perhaps you don't like what you see, and want to get back the previous bake. You can, open the History tab. If you select any of the labels in the history, it will load that previous baked texture.
 
 {% tabs %}
 {% tab title="Maya" %}
 <div><figure><img src="../../.gitbook/assets/maya_history_0.png" alt="History tab item 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_history_1.png" alt="History tab item 2"><figcaption></figcaption></figure></div>
-
-
 {% endtab %}
 
 {% tab title="Blender" %}
@@ -115,7 +109,7 @@ The process is as follows - when selecting in the history tab it will replace th
 {% endstep %}
 
 {% step %}
-#### Baking additional details / overlaying bakes using Transfer
+**Baking additional details / overlaying bakes using Transfer**
 
 In this step we try how to append the bakes on top of each other.
 
@@ -132,8 +126,6 @@ Set up the bake so that you still use the **Normals Edge Bevel** tab, but you en
 {% tabs %}
 {% tab title="Maya" %}
 <div><figure><img src="../../.gitbook/assets/maya_overlay_0.png" alt="Transfer details overlay bake 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_overlay_1.png" alt="Transfer details overlay bake 2"><figcaption></figcaption></figure></div>
-
-
 {% endtab %}
 
 {% tab title="Blender" %}
@@ -146,8 +138,6 @@ As always experiment, this time perhaps try to bake it multiple times, with diff
 {% tabs %}
 {% tab title="Maya" %}
 <div><figure><img src="../../.gitbook/assets/maya_overlay_2.png" alt="Additional overlay detail 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_overlay_3.png" alt="Additional overlay detail 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_overlay_4.png" alt="Additional overlay detail 3"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_overlay_5.png" alt="Additional overlay detail 4"><figcaption></figcaption></figure></div>
-
-
 {% endtab %}
 
 {% tab title="Blender" %}
@@ -159,7 +149,7 @@ Notice how the detail keeps on adding. And again - if you wish, go back few step
 {% endstep %}
 
 {% step %}
-#### Baking additional details
+**Baking additional details**
 
 Unhide the **transfer\_details\_variations** group and start experimenting with baking these. You will see, that there's a ring around the main cylinder - this is if you are not satisfied with how the **modifiers** group baked into the texture, you may replace it with custom made model or add additional details to the model.
 
@@ -168,8 +158,6 @@ No need to bake the whole **transfer\_details\_variations** group, this time - s
 {% tabs %}
 {% tab title="Maya" %}
 <div><figure><img src="../../.gitbook/assets/maya_additional_details_0.png" alt="Additional details variation 1"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_additional_details_1.png" alt="Additional details variation 2"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_additional_details_2.png" alt="Additional details variation 3"><figcaption></figcaption></figure></div>
-
-
 {% endtab %}
 
 {% tab title="Blender" %}
@@ -182,8 +170,6 @@ Add the details as many times as you wish. Just try to get the hang of it.
 {% tabs %}
 {% tab title="Maya" %}
 <div><figure><img src="../../.gitbook/assets/maya_additional_details_3.png" alt="Additional details variation 4"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_additional_details_4.png" alt="Additional details variation 5"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/maya_additional_details_5.png" alt="Additional details variation 6"><figcaption></figcaption></figure></div>
-
-
 {% endtab %}
 
 {% tab title="Blender" %}
@@ -197,7 +183,7 @@ There are additional settings such as **Use smooth normals** or **Use vertex col
 {% endstep %}
 
 {% step %}
-#### Conclusion
+**Conclusion**
 
 So this is the basic working of the VmBaker.
 
