@@ -27,29 +27,44 @@ layout:
 
 Welcome to the **VmBaker** documentation!
 
-The goal of VmBaker is to be a fast, GPU-accelerated texture baking tool built for any DCC software capable of running Python. Currently, Maya (2024+) and Blender (4.2+) are supported, with others planned. It leverages NVIDIA OptiX and CUDA, so you must have an NVIDIA RTX graphics card to use this plugin.
+VmBaker is a hardware-accelerated texture baking tool built to integrate into any DCC software capable of running Python. By leveraging NVIDIA OptiX and CUDA, VmBaker processes mesh-based texture generation efficiently using your local GPU.
+
+The plugin is designed with a unified user interface. This ensures that the workflow, settings, and behavior remain identical regardless of which host application you are currently using.
 
 {% hint style="warning" %}
 Currently supporting **Windows** and **Nvidia RTX** cards only.
 {% endhint %}
 
-Because it is designed to support multiple DCC applications, there are some limitations to what it can bake. The main limitation is that it does not support built-in shader graphs or materials; it is strictly a mesh-based renderer.
+## Key Features
 
-This documentation serves as an overview of the user interface, explaining what each setting controls during a bake.
+* **GPU Rendering:** Utilizes NVIDIA OptiX and CUDA for hardware-accelerated baking.
+* **Unified UI:** Provides the exact same interface and workflow across all supported DCC applications.
+* **History Management:** Includes a built-in history panel to store, view, and reload settings from previous baking sessions.
+* **Post-Processing:** Features automated edge dilation (padding) and Gaussian blur options to process the final output texture.
+* **Non-Destructive Workflows:** Supports incremental saving and appending baked results onto existing textures.
 
-## Requirements
+## Baking Modes
 
-* Windows x64
-* Nvidia RTX GPU with updated drivers
-* any DCC application of your choice
-  * Maya (2024 and up)
-  * Blender (4.2 and up)
-  * stay tuned for more
+VmBaker is a strictly mesh-based renderer. It does not evaluate host-application shader graphs or materials. Instead, it focuses on geometry-driven baking via dedicated modes:
+
+* **Normals Edge Bevel:** Generates a normal map that simulates smoothed, rounded edges on hard-surface geometry.
+* **Normals Transfer:** Projects high-poly surface normals and details onto a low-poly target mesh.
+* **Ambient Occlusion (AO):** Calculates geometric self-shadowing based on ray distance and spread parameters.
+* **Utility Masks:** Generates flat-color, vertex-color, or ID masks based on mesh properties.
+
+## System Requirements
+
+* **OS:** Windows x64
+* **Hardware:** NVIDIA RTX Graphics Card (with up-to-date drivers)
+* **Supported Host Applications:**
+  * Autodesk Maya (2024 and newer)
+  * Blender (4.2 and newer)
+  * *(The underlying architecture is designed to support additional Python-capable DCCs in future updates.)*
 
 {% hint style="info" %}
 #### Licensing <a href="#user-content-licensing-1" id="user-content-licensing-1"></a>
 
-To keep the user experience as frictionless as possible, VmBaker contains absolutely no DRM, license keys, or online authorization checks. It relies entirely on the honor system. If this tool saves you time and improves your workflow, please consider purchasing it to support future updates.
+To keep the user experience as frictionless as possible, VmBaker contains absolutely no DRM, license keys, or online authorization checks. It relies entirely on the honor system. If this tool saves you time and improves your workflow, please consider purchasing it from our [Gumroad Store](https://vaclavmazany.gumroad.com/l/VmBaker) to support future updates.
 {% endhint %}
 
 ## Interface Breakdown
