@@ -6,7 +6,7 @@ These examples are solely for the purpose of demonstrating the features of VmBak
 
 If you still wish you may freely use the models or textures that are included in the Examples.zip without any restrictions.
 
-There is a HDRI included for convenience **citrus\_orchard\_road\_puresky\_1k.exr** you may find others for example here : [https://polyhaven.com/](https://polyhaven.com/)
+I am using a HDRI only for the purpose of preview of the models, you may find some for example here : [https://polyhaven.com/](https://polyhaven.com/)
 
 * For the use of the VmBaker any of the HDRI aren't necessary
 

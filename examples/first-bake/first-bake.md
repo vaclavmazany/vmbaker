@@ -25,7 +25,8 @@ This is for convenience so that VmBaker can automatically guess the output paths
 This is an optional step to get a better preview of the model. It will load the HDRI and use it as cubemap reflections in the viewport.
 
 1. Please add a sky dome light using Arnold -> Lights -> Skydome Light
-2. In the attributes editor of the newly created aiSkyDomeLight1 please assign the included HDRI image from the examples to the Color slot as shown in the screenshots.
+2. In the attributes editor of the newly created aiSkyDomeLight1 please assign some HDRI image to the Color slot as shown in the screenshots.
+   1. You may find free HDRI here [https://polyhaven.com/](https://polyhaven.com/)
 3. Enable all lights in the viewport settings.
 4. If you wish, disable the preview of the HDRI in the background by disabling **Show -> Viewport -> Lighting, Shading & Rendering -> Lights.** I will keep it disabled.
 
@@ -49,13 +50,11 @@ Change the renderer to Cycles -> GPU Compute and switch to **Viewport shading**.
 
 <figure><img src="../../.gitbook/assets/image (7).png" alt="Viewport shading enabled in Blender" width="188"><figcaption><p>Viewport shading on</p></figcaption></figure>
 
-There are some groups like **modifiers**, **transfer_details**, and **transfer_details_variations**—you may hide these or use Local View so they don't get in the way.
+There are some groups like **modifiers**, **transfer\_details**, and **transfer\_details\_variations**—you may hide these or use Local View so they don't get in the way.
 
 Now, please save the scene in the same directory as the FBX file so your directory looks similar to this.
 
 <figure><img src="../../.gitbook/assets/blender_scene_setup.png" alt="Blender scene saved next to the FBX file"><figcaption></figcaption></figure>
-
-
 
 If the add-on is activated properly, you should see a new panel called **VmBaker** in the Blender N-Panel (sidebar). Please open it.
 {% endtab %}
