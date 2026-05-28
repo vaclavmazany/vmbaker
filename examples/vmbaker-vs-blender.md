@@ -48,7 +48,7 @@ Simple setup using Bevel node in shader editor with 128 samples, radius of 2mm a
 
 * Notice that the VmBaker still holds well even with a lot less samples (this results with faster baking speeds)
 
-### Separated objects
+## Separated objects
 
 <figure><img src="../.gitbook/assets/separate_objects.png" alt=""><figcaption><p>Baking separate objects</p></figcaption></figure>
 
