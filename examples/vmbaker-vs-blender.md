@@ -50,6 +50,6 @@ Simple setup using Bevel node in shader editor with 128 samples, radius of 2mm a
 
 ### Separated objects
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Baking separate objects</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/separate_objects.png" alt=""><figcaption><p>Baking separate objects</p></figcaption></figure>
 
 * With VmBaker may render as many objects as you like, you do not have to merge the objects as you do with native Blender baking. Still notice the disconnected edges on the native Blender bake.
