@@ -21,6 +21,8 @@ layout:
     visible: true
   tags:
     visible: true
+  actions:
+    visible: true
 ---
 
 # Introduction to VmBaker
@@ -59,7 +61,7 @@ VmBaker is a strictly mesh-based renderer. It does not evaluate host-application
 * **Supported Host Applications:**
   * Autodesk Maya (2024 and newer)
   * Blender (4.2 and newer)
-  * *(The underlying architecture is designed to support additional Python-capable DCCs in future updates.)*
+  * _(The underlying architecture is designed to support additional Python-capable DCCs in future updates.)_
 
 {% hint style="info" %}
 #### Licensing <a href="#user-content-licensing-1" id="user-content-licensing-1"></a>
@@ -76,3 +78,13 @@ The interface is divided into three main sections:
 3. **Baking Modes (Tabs):** The core rendering modes, each with its own specific settings and transfer options.
 
 Use the sidebar navigation to explore the specific settings for each tab and feature.
+
+## Where to buy
+
+### Gumroad
+
+* [https://vaclavmazany.gumroad.com/l/VmBaker](https://vaclavmazany.gumroad.com/l/VmBaker)
+
+### Superhivemarket
+
+* ...
