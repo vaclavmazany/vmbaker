@@ -87,4 +87,4 @@ Use the sidebar navigation to explore the specific settings for each tab and fea
 
 ### Superhivemarket
 
-* ...
+* [https://superhivemarket.com/products/vmbaker](https://superhivemarket.com/products/vmbaker)
