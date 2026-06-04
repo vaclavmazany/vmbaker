@@ -27,9 +27,9 @@ layout:
 
 Welcome to the **VmBaker** documentation!
 
-VmBaker is a hardware-accelerated texture baking tool built to integrate into any DCC software capable of running Python. By leveraging NVIDIA OptiX and CUDA, VmBaker processes mesh-based texture generation efficiently using your local GPU.
+VmBaker is a **cross-compatible, multi-software** texture baking tool built to integrate seamlessly into any DCC software capable of running Python. Whether you are using **Autodesk Maya, Blender**, or future supported host applications, VmBaker provides the exact same high-performance baking experience. By leveraging NVIDIA OptiX and CUDA, VmBaker processes mesh-based texture generation efficiently using your local GPU.
 
-The plugin is designed with a unified user interface. This ensures that the workflow, settings, and behavior remain identical regardless of which host application you are currently using.
+The plugin is designed with a **100% unified user interface**. This ensures that your workflow, settings, and behavior remain identical, allowing you to jump between different 3D software without having to learn a new baking pipeline.
 
 {% hint style="warning" %}
 Currently supporting **Windows** and **Nvidia RTX** cards only.
@@ -38,7 +38,7 @@ Currently supporting **Windows** and **Nvidia RTX** cards only.
 ## Key Features
 
 * **GPU Rendering:** Utilizes NVIDIA OptiX and CUDA for hardware-accelerated baking.
-* **Unified UI:** Provides the exact same interface and workflow across all supported DCC applications.
+* **Multi-Software Unified UI:** Learn it once, use it everywhere. Provides the exact same interface, workflow, and feature set across **Autodesk Maya, Blender**, and future supported DCC applications.
 * **History Management:** Includes a built-in history panel to store, view, and reload settings from previous baking sessions.
 * **Post-Processing:** Features automated edge dilation (padding) and Gaussian blur options to process the final output texture.
 * **Non-Destructive Workflows:** Supports incremental saving and appending baked results onto existing textures.
