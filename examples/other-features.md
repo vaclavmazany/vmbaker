@@ -1,7 +1,7 @@
 ---
 description: >-
   Purpose of this page is to demonstrate some outstanding or useful functions of
-  VmBaker.
+  VmBaker. This is just for a quick preview of such features.
 ---
 
 # Other Features
