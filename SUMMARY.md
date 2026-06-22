@@ -30,3 +30,4 @@
   * [Baking - Normal map](examples/first-bake/first-bake-1.md)
 * [Lowpoly revolver cylinder](examples/lowpoly-revolver-cylinder.md)
 * [VmBaker vs Blender](examples/vmbaker-vs-blender.md)
+* [Other Features](examples/other-features.md)
