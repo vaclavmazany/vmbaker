@@ -92,3 +92,33 @@ It's possible to keep on adding details after initial bake was done.
 In this example I first baked EdgeBevel and then transfered details on top of it.
 {% endcolumn %}
 {% endcolumns %}
+
+### Baking CAD models with beveled edges
+
+* or other models with hard edges
+
+{% columns %}
+{% column %}
+<div><figure><img src="../.gitbook/assets/lp_cad_1.png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/lp_cad_0.png" alt=""><figcaption></figcaption></figure></div>
+
+<figure><img src="../.gitbook/assets/v8_comparison.png" alt=""><figcaption></figcaption></figure>
+{% endcolumn %}
+
+{% column %}
+Using VmBaker you can make quick bakes of other geometry, that is not really prepared for baking to texture - such as CAD models.
+
+You may even use very lowpoly models, such as the example.
+
+On the comparison image you may see the difference between ordinary bake from highpoly to lowpoly on the bottom - for both approaches, using smooth normals and without and EdgeBevel with Transfer, which uses hard normals and some radius to bevel the hard edges.
+
+Notice that there is almost no detail baked when baking without smooth normals, but there are also many issues with skewing when using smooth normals.
+
+{% hint style="info" %}
+Notice that baking using the EdgeBevel with Transfer and smooth normals disabled catches all the details.
+{% endhint %}
+{% endcolumn %}
+{% endcolumns %}
+
+This is a really quick example, in real life artist would most probably adjust some parts of both of the models to get even better results, but this is just to give you an example what may be achieved really quickly.
+
+Also user may combine any of the mentioned approaches, so it is possible add details on top of the existing bake and so on.
