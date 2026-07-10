@@ -22,7 +22,7 @@
   * [Dilation](user-interface/baking-modes-tabs/dilation.md)
 * [Output](user-interface/output.md)
 
-## Examples
+## Examples and Guides <a href="#examples" id="examples"></a>
 
 * [Introduction](examples/introduction.md)
 * [First Bake - Bullet](examples/first-bake/README.md)
@@ -30,4 +30,6 @@
   * [Baking - Normal map](examples/first-bake/first-bake-1.md)
 * [Lowpoly revolver cylinder](examples/lowpoly-revolver-cylinder.md)
 * [VmBaker vs Blender](examples/vmbaker-vs-blender.md)
+* [Highpoly to Lowpoly transfer Normal+AO](examples/highpoly-to-lowpoly-transfer-normal+ao.md)
+* [Selections + visibility + UVs](examples/selections-+-visibility-+-uvs.md)
 * [Other Features](examples/other-features.md)
