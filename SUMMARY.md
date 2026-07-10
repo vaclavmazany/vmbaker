@@ -33,3 +33,7 @@
 * [Highpoly to Lowpoly transfer Normal+AO](examples/highpoly-to-lowpoly-transfer-normal+ao.md)
 * [Selections + visibility + UVs](examples/selections-+-visibility-+-uvs.md)
 * [Other Features](examples/other-features.md)
+
+***
+
+* [Release notes](release-notes.md)
