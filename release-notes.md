@@ -5,6 +5,7 @@
 * NEW : asynchronous / Non-blocking Rendering
 * NEW : global presets system for individual inputs and tab groups
 * FIX : general AO rendering improvements
+* FIX : Blender mesh processing memory leak
 
 0.9.6
 
