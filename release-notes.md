@@ -6,6 +6,9 @@
 * NEW : global presets system for individual inputs and tab groups
 * FIX : general AO rendering improvements
 * FIX : Blender mesh processing memory leak
+* IMPROVEMENT : Maya mesh extraction is now significantly faster
+* FIX : Eliminated shading seams on non-uniformly scaled objects
+* FIX : Fixed object selection in Blender's Local View
 
 0.9.6
 
