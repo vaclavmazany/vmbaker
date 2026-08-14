@@ -2,6 +2,7 @@
 
 0.9.7 - not yet released
 
+* NEW : option to sample normalmap textures linked in the shader graph (supporting multiple UV sets and basic UV transforms)
 * NEW : asynchronous / Non-blocking Rendering
 * NEW : global presets system for individual inputs and tab groups
 * FIX : general AO rendering improvements
