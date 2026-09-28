@@ -7,6 +7,7 @@ layout:
   cover:
     visible: true
     size: hero
+    mask: none
   title:
     visible: true
   description:
@@ -22,6 +23,8 @@ layout:
   tags:
     visible: true
   actions:
+    visible: true
+  anchors:
     visible: true
 ---
 
@@ -88,3 +91,13 @@ Use the sidebar navigation to explore the specific settings for each tab and fea
 ### Superhivemarket
 
 * [https://superhivemarket.com/products/vmbaker](https://superhivemarket.com/products/vmbaker)
+
+
+
+#### Feedback & Bug Reports <a href="#user-content--feedback--bug-reports" id="user-content--feedback--bug-reports"></a>
+
+If you encounter a bug, crash, or have a feature idea:
+
+* [**Report a Bug**](https://github.com/vaclavmazany/vmbaker/issues/new?template=bug_report.md) _(Opens the bug form with Maya/Blender & GPU specs)_
+* [**Request a Feature**](https://github.com/vaclavmazany/vmbaker/issues/new?template=feature_request.md) _(Suggest new tools or workflows)_
+* [**Browse Open Issues**](https://github.com/vaclavmazany/vmbaker/issues)
