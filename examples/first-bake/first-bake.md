@@ -48,7 +48,7 @@ Import the example file using **File -> Import -> FBX** and load the **bullet.fb
 
 Change the renderer to Cycles -> GPU Compute and switch to **Viewport shading**.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt="Viewport shading enabled in Blender" width="188"><figcaption><p>Viewport shading on</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt="Viewport shading enabled in Blender" width="188"><figcaption><p>Viewport shading on</p></figcaption></figure>
 
 There are some groups like **modifiers**, **transfer\_details**, and **transfer\_details\_variations**—you may hide these or use Local View so they don't get in the way.
 
