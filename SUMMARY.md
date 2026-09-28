@@ -37,3 +37,5 @@
 ***
 
 * [Release notes](release-notes.md)
+* [Report a Bug](https://github.com/vaclavmazany/vmbaker/issues/new?template=bug_report.md)
+* [Request a Feature](https://github.com/vaclavmazany/vmbaker/issues/new?template=feature_request.md)
