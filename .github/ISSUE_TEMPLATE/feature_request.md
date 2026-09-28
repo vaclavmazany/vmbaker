@@ -1,20 +1,22 @@
 ---
 name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
+about: Suggest a new feature, improvement, or DCC integration for VmBaker
+title: '[FEATURE] '
+labels: 'enhancement'
 assignees: ''
-
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+**Feature Summary**
+A clear and concise description of the new feature or improvement you would like to see in VmBaker.
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+**Target Host Application**
+- [ ] Maya
+- [ ] Blender
+- [ ] New DCC Integration (e.g. 3ds Max, Cinema 4D, Houdini)
+- [ ] General / Core GPU Baker
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+**Workflow / Problem Solved**
+How would this feature improve your baking pipeline? What problem or limitation does it solve?
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+**Additional References / Mockups**
+Add any reference screenshots, visual examples, or links to similar tools if applicable.

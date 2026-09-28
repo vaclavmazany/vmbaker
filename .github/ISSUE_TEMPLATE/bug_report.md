@@ -1,38 +1,33 @@
 ---
 name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
+about: Report an issue or unexpected behavior in VmBaker
+title: '[BUG] '
+labels: 'bug'
 assignees: ''
-
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+**Description of the Issue**
+Briefly describe what happened and what went wrong.
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+**Environment**
+- **Host Application:** [e.g. Maya 2025 / Blender 4.2]
+- **VmBaker Version:** [e.g. 0.9.6]
+- **GPU Model:** [e.g. NVIDIA RTX 3080 / 4070]
+- **GPU Driver Version:** [e.g. 560.xx]
+- **Operating System:** [Windows 10 / 11]
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+**Bake Settings (if applicable)**
+- **Baking Mode:** [e.g. Normals Edge Bevel / Normals Transfer / AO / Mask / Dilation]
+- **Key Settings:** [e.g. Resolution, Radius, Transfer on/off, Ray distances]
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+**Steps to Reproduce**
+1. Select '...'
+2. Set '...'
+3. Click 'RENDER'
+4. See error or unexpected visual artifact
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+**Expected Behavior**
+A clear description of what you expected to happen instead.
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
-
-**Additional context**
-Add any other context about the problem here.
+**Screenshots / Error Logs**
+If applicable, attach screenshots of the viewport/UI or copy-paste error messages from the console/script editor.
